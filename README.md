@@ -8,7 +8,7 @@ inspired by [Raycast AI Proxy](https://github.com/yufeikang/raycast_api_proxy)
 ## Usage
 
 1. Clone this repository
-2. Use ./scripts/cert_gen.py --domain backend.raycast.com  --out ./cert to generate a self-signed certificate
+2. Use `./scripts/cert_gen.py --domain backend.raycast.com  --out ./cert` to generate a self-signed certificate
 3. You can modify the parameters of `ChatMLClient` according to your needs
 ```rust
 #[derive(Debug, TypedBuilder, Clone)]
@@ -21,7 +21,7 @@ pub struct ChatMLClient {
     model: String,
 }
 ``` 
-simply, you can use `llama.cpp` server 
+simply, you can use `llama.cpp` server     
 4. `cargo build -r` && `sudo ./target/release/raycast-api-proxy`
 
 ### Configuration
